@@ -22,8 +22,20 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amberAccent,
-      body: Center(child: Text('Hello World !!! Welcome All of You!!')),
+      backgroundColor: Colors.green,
+      body: Center(child: Text("Hello guys! We will complete our app soon. So, Stay connected with us!",
+        textAlign: TextAlign.right,
+        maxLines: 2,
+        style: TextStyle(
+        fontSize: 24,
+        color: Colors.white,
+        // backgroundColor: Colors.blue,
+        fontWeight: FontWeight.bold,
+        decoration: TextDecoration.underline,
+        wordSpacing: 4,
+        letterSpacing: 1,
+          overflow: TextOverflow.ellipsis,
+      ),)),
     );
   }
 }
